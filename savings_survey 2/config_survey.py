@@ -7,7 +7,7 @@ SURVEY_STRUCTURE = [
         "options": {
             "v_1": "International Program (IP) streichen",
             "v_2": "einen Kurs Industrie (IN) reduzieren / streichen",
-            "v_3": "BWL/Digitales Gesundheitsmanagement stoppen",
+            "v_3": "BWL/Digitales Gesundheitsmanagement (DGM) stoppen",
             "v_4": "einen Kurs Handel (HD) reduzieren / streichen",
             "v_5": "einen Kurs Bank (BK) reduzieren / streichen",
             "v_6": "einen Kurs Wirtschaftsinformatik (WI) reduzieren / streichen"
@@ -19,7 +19,7 @@ SURVEY_STRUCTURE = [
         "options": {
             "v_7": "International Program (IP) streichen",
             "v_8": "einen Kurs Industrie (IN) reduzieren / streichen",
-            "v_9": "BWL/Digitales Gesundheitsmanagement stoppen",
+            "v_9": "BWL/Digitales Gesundheitsmanagement (DGM) stoppen",
             "v_10": "einen Kurs Handel (HD) reduzieren / streichen",
             "v_11": "einen Kurs Bank (BK) reduzieren / streichen",
             "v_12": "einen Kurs Wirtschaftsinformatik (WI) reduzieren / streichen"

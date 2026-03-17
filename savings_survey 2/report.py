@@ -13,19 +13,27 @@ def generate_pdf(questions, output_path="output/report.pdf"):
     with PdfPages(output_path) as pdf:
         for question in questions:
             n = question.num_axes
-            if n == 2:
+            if n == 3:
                 fig, axes = plt.subplots(
-                    1, 2, figsize=(16, 7),
-                    gridspec_kw={'width_ratios': [2, 1]}
+                    1, 3, figsize=(22, 7),
+                    gridspec_kw={'width_ratios': [2, 1, 1.5], 'wspace': 0.45}
                 )
                 axes_list = list(axes)
+                fig.subplots_adjust(top=0.78, bottom=0.18, left=0.05, right=0.98)
+            elif n == 2:
+                fig, axes = plt.subplots(
+                    1, 2, figsize=(16, 7),
+                    gridspec_kw={'width_ratios': [2, 1], 'wspace': 0.4}
+                )
+                axes_list = list(axes)
+                fig.subplots_adjust(top=0.80, bottom=0.15, left=0.08, right=0.97)
             else:
                 fig, ax = plt.subplots(1, 1, figsize=(10, 6))
                 axes_list = [ax]
+                fig.subplots_adjust(top=0.80, bottom=0.15, left=0.08, right=0.97)
 
-            wrapped_title = textwrap.fill(question.question_text, width=100)
+            wrapped_title = textwrap.fill(question.question_text, width=110)
             fig.suptitle(wrapped_title, fontsize=10, y=0.98, va='top')
-            fig.subplots_adjust(top=0.80, bottom=0.15, left=0.08, right=0.97)
 
             question.visualize(axes_list)
 
