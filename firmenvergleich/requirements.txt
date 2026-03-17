@@ -1,0 +1,7 @@
+pandas
+openpyxl
+matplotlib
+matplotlib-venn
+jupyter
+notebook
+rapidfuzz
